@@ -16,8 +16,8 @@ s = "我是你爸爸"
 print(s[::-1]) #常规方法，利用字符串切片
 
 def rvs(st):
-    if st == "":
+    if st == "":#这是基例
         return st
     else:
-        return rvs(st[1:])+st[0]#把第一个字符串放到后面
+        return rvs(st[1:])+st[0]#把第一个字符串放到后面，这是链条
 print(rvs("我是你爸爸a"))
